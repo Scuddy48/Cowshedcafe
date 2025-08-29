@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartList = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
 
-  // Handle Add to Cart
+  
   document.querySelectorAll(".add-to-cart").forEach(button => {
     button.addEventListener("click", function () {
       const name = this.getAttribute("data-name");
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Update Cart UI
+  
   function updateCart() {
     cartList.innerHTML = "";
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cartTotal.textContent = total.toFixed(2);
 
-    // Add event listeners to remove buttons
+    
     document.querySelectorAll(".remove-item").forEach(button => {
       button.addEventListener("click", function () {
         const index = parseInt(this.getAttribute("data-index"));
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Quantity change
+
     document.querySelectorAll(".quantity-input").forEach(input => {
       input.addEventListener("change", function () {
         const index = parseInt(this.getAttribute("data-index"));
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (newQuantity > 0) {
           cartItems[index].quantity = newQuantity;
         } else {
-          cartItems.splice(index, 1); // Remove if 0
+          cartItems.splice(index, 1); 
         }
         updateCart();
       });

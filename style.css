@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Base body styles */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -22,10 +22,10 @@ body {
 .page-wrapper {
   background-color: rgba(23, 22, 22, 0.7); 
   min-height: 100vh;
-  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Page-specific backgrounds */
 .home-page .page-wrapper {
   background-image: url('images/cafe2.jpg');
   background-size: cover;
@@ -59,7 +59,7 @@ body {
   to { opacity: 1; }
 }
 
-/* Base Nav Styles */
+
 .navbar {
   background-color: #5D3A00;
   color: white;
@@ -108,7 +108,7 @@ body {
   cursor: pointer;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -118,7 +118,7 @@ body {
   .hamburger {
     display: block;
     margin-left: auto;
-    margin-top: 0; /* Adjust positioning if needed */
+    margin-top: 0; 
     margin-bottom: 1rem; 
 
   }
@@ -145,14 +145,14 @@ body {
   }
 }
 
-/* Container to center content */
+
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 1rem;
 }
 
-/* Header & Navigation Styles */
+
 header {
   background-color: #5D3A00;
   color: white;
@@ -185,7 +185,7 @@ nav a:hover {
   color: #f7c325;
 }
 
-/* Main Content */
+
 main {
   padding: 2rem 0;
 
@@ -208,7 +208,7 @@ main p {
 }
 
 
-/* Menu item styling */
+
 section {
   margin-bottom: 2rem;
   color: #ffffff;
@@ -233,7 +233,7 @@ article h4 {
   color: #5D3A00;
 }
 
-/* Cart Styles */
+
 .cart {
   background-color: #5D3A00;
   padding: 1rem;
@@ -290,7 +290,7 @@ article h4 {
   text-align: center;
 }
 
-/* Footer */
+
 footer {
   background-color: #5D3A00;
   text-align: center;
@@ -298,13 +298,12 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Address styling */
+
 address {
   font-style: normal;
   line-height: 1.8;
 }
 
-/* Menu Section Layout */
 .menu-section {
   margin-bottom: 2rem;
 }
