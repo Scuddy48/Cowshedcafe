@@ -27,28 +27,28 @@ body {
 }
 
 .home-page .page-wrapper {
-  background-image: url('images/cafe2.jpg');
+  background-image: url('images/cowshed cafe.jpeg');
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease-in-out;
 }
 
 .menu-page .page-wrapper {
-  background-image: url('images/cafe5.jpg');
+  background-image: url('images/cowshed cafe.jpeg');
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease-in-out;
 }
 
 .about-page .page-wrapper {
-  background-image: url('images/cafe5.jpg');
+  background-image: url('images/cowshed cafe.jpeg');
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease-in-out;
 }
 
 .contact-page .page-wrapper {
-  background-image: url('images/cafe6.jpg');
+  background-image: url('images/cowshed cafe.jpeg');
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease-in-out;
@@ -61,7 +61,7 @@ body {
 
 
 .navbar {
-  background-color: #5D3A00;
+  background-color: #553B06;
   color: white;
   padding: 1rem 0;
 }
@@ -137,7 +137,7 @@ body {
   .nav-links {
     flex-direction: column;
     padding: 1rem;
-    background-color: #4A2F00;
+    background-color: #553B06;
   }
 
   .nav-links li {
@@ -154,7 +154,7 @@ body {
 
 
 header {
-  background-color: #5D3A00;
+  background-color: #553B06;
   color: white;
   padding: 1rem 0;
 }
@@ -193,7 +193,7 @@ main {
 
 main h2 {
   margin-bottom: 1rem;
-  color: #704c03;
+  color: #EEA617;
   text-align: center;
   font-size: 2.5rem;
   
@@ -201,18 +201,24 @@ main h2 {
 
 main p {
   margin-bottom: 1.5rem;
-  color: #655303;
+  color: #553B06;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
-
+h4{
+  color: #EEA617;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
 section {
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: bb#000000;
   text-align: center;
+
 }
 
 article {
@@ -230,25 +236,25 @@ article h4 {
 
 .price {
   font-weight: bold;
-  color: #5D3A00;
+  color: #553B06;
 }
 
 
 .cart {
-  background-color: #5D3A00;
+  background-color: #553B06;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-top: 2rem;
   max-width: 600px;
   margin: auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .cart h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #5D3A00;
+  color: #553B06;
 }
 
 
@@ -260,6 +266,8 @@ article h4 {
 #cart-items {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 1rem;
+  color: #f0eeea; 
 }
 
 .cart-item {
@@ -272,11 +280,30 @@ article h4 {
 
 .cart-item button {
   background: rgb(240, 240, 240);
-  color: #5D3A00;
+  color: #553B06;
   border: none;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.cart-item span {
+  margin: 0 0.5rem;
+  font-weight: bolder;
+  font-size: 20px;
+} 
+
+button.add-to-cart{
+  background: #553B06;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .quantity-controls {
@@ -292,7 +319,7 @@ article h4 {
 
 
 footer {
-  background-color: #5D3A00;
+  background-color: #553B06;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
@@ -302,7 +329,29 @@ footer {
 address {
   font-style: normal;
   line-height: 1.8;
+  color: #f7c325;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: center;
 }
+
+address a {
+  padding-top: 45px;
+  color: #f7c325;
+  text-decoration: none;
+  font-size: 25px;
+} 
+address a:hover {
+  text-decoration: underline;
+  color: #f0eeea;
+  transition: color 0.3s ease-in-out;
+  }
+
 
 .menu-section {
   margin-bottom: 2rem;
@@ -325,13 +374,25 @@ address {
   transition: transform 0.2s ease;
 }
 
+article{
+  color: #f7c325;
+  background-color: #553B06;
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+  
+}
+
 .menu-card:hover {
   transform: translateY(-5px);
 }
 
 .menu-card h4 {
   margin-bottom: 0.5rem;
-  color: #5D3A00;
+  color: #553B06;
 }
 
 .menu-card p {
@@ -340,5 +401,6 @@ address {
 
 .menu-card .price {
   font-weight: bold;
-  color: #5D3A00;
+  color: #553B06 ;
 }
+
