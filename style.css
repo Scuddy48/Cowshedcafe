@@ -63,7 +63,11 @@ body {
 .navbar {
   background-color: #553B06;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
   padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar h1 {
@@ -183,11 +187,16 @@ nav a {
 
 nav a:hover {
   color: #f7c325;
+  transition: color 0.3s ease-in-out;
 }
 
 
 main {
   padding: 2rem 0;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 
 }
 
@@ -201,7 +210,7 @@ main h2 {
 
 main p {
   margin-bottom: 1.5rem;
-  color: #553B06;
+  color: #f7c325;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.6;
